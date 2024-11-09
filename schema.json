@@ -1,0 +1,179 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "desc": {
+        "type": "string"
+      },
+      "authors": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "mods": {
+        "type": "string"
+      },
+      "settings": {
+        "type": "object",
+        "properties": {
+          "repeat": {
+            "type": "string"
+          },
+          "unlock": {
+            "type": "string"
+          },
+          "vars": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "repeat",
+          "unlock",
+          "vars"
+        ]
+      },
+      "missions": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "translated": {
+                "type": "boolean"
+              },
+              "props": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "align": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "title": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "subtitle": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "description": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "objectives": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "rewards": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "translated",
+              "props",
+              "align",
+              "title",
+              "subtitle",
+              "description",
+              "objectives",
+              "rewards"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "name",
+      "desc",
+      "authors",
+      "version",
+      "mods",
+      "settings",
+      "missions"
+    ]
+  }
