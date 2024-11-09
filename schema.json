@@ -53,18 +53,12 @@
                 "items": [
                   {
                     "type": "string"
-                  },
-                  {
-                    "type": "string"
                   }
                 ]
               },
               "align": {
                 "type": "array",
                 "items": [
-                  {
-                    "type": "string"
-                  },
                   {
                     "type": "string"
                   }
@@ -75,18 +69,12 @@
                 "items": [
                   {
                     "type": "string"
-                  },
-                  {
-                    "type": "string"
                   }
                 ]
               },
               "subtitle": {
                 "type": "array",
                 "items": [
-                  {
-                    "type": "string"
-                  },
                   {
                     "type": "string"
                   }
@@ -97,23 +85,12 @@
                 "items": [
                   {
                     "type": "string"
-                  },
-                  {
-                    "type": "string"
                   }
                 ]
               },
               "objectives": {
                 "type": "array",
                 "items": [
-                  {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "string"
-                      }
-                    ]
-                  },
                   {
                     "type": "array",
                     "items": [
@@ -130,20 +107,6 @@
                   {
                     "type": "array",
                     "items": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "type": "string"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "string"
-                      },
                       {
                         "type": "string"
                       }
