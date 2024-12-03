@@ -1,0 +1,40 @@
+{
+  "name": "dbchelper",
+  "icon": "./assets/icon.png",
+  "displayName": "Dragon Block C Helper",
+  "description": "An extension to help with configuring custom saga files for DBC",
+  "publisher": "ZombieAce",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "repository": {
+    "url": "https://github.com/ZombieAce/DBC-Helper-Extension"
+  },
+  "bugs": {
+		"url": "https://github.com/ZombieAce/DBC-Helper-Extension/issues"
+	},
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+		"workspaceContains:data/missions/*.json"
+  ],
+  "keywords": [
+    "Minecraft",
+    "Dragon Block C",
+    "DBC",
+    "Saga",
+    "Story",
+    "Mission"
+  ],
+  "main": "./assets/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "json",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
