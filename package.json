@@ -22,11 +22,14 @@
   ],
   "keywords": [
     "Minecraft",
+    "Dragon Block",
     "Dragon Block C",
     "DBC",
+    "DBZ",
     "Saga",
     "Story",
-    "Mission"
+    "Mission",
+    "Config"
   ],
   "main": "./assets/extension.js",
   "contributes": {
@@ -34,6 +37,12 @@
       {
         "language": "json",
         "path": "./snippets/snippets.code-snippets"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "*/",
+        "url": ""
       }
     ]
   }
