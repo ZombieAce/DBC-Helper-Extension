@@ -1,0 +1,62 @@
+{
+    "Basic Mission": {
+        "prefix": "!bm",
+        "description": "Basic Mission Template",
+        "scope": "json",
+        "body": [
+            "{",
+            "  \"id\": $1,",
+            "  \"translated\": ${2|true,false|},",
+            "  \"props\": [",
+            "    \"${3|default,human,saiyan,halfsaiyan,namekian,arcosian,majin|}\"",
+            "  ],",
+            "  \"align\": [",
+            "    \"neutral\"",
+            "  ],",
+            "  \"title\": [",
+            "    \"$4\"",
+            "  ],",
+            "  \"subtitle\": [",
+            "    \"$5\"",
+            "  ],",
+            "  \"description\": [",
+            "    \"$6\"",
+            "  ],",
+            "  \"objectives\": [",
+            "    [",
+            "      \"${7:next}\"",
+            "    ]",
+            "  ],",
+            "  \"rewards\": [",
+            "    [",
+            "      \"${8:nothing};${9:jinryuujrmcore.missionSys.Protect};$0\",",
+            "      \"${8:nothing};${10:jinryuujrmcore.missionSys.Myself};$0\",",
+            "      \"${8:nothing};${11:jinryuujrmcore.missionSys.Evil};$0\"",
+            "    ]",
+            "  ]",
+            "}"
+        ]
+    },
+    "MissionTemplate": {
+        "scope": "json",
+        "prefix": "!dbc",
+        "body": [
+            "{",
+            "  \"name\": \"${1:Dragon Block C New Mission}\",",
+            "  \"desc\": \"${2:A new mission file}\",",
+            "  \"authors\": \"$3\",",
+            "  \"version\": \"${4:1.0}\",",
+            "  \"mods\": \"DBC\",",
+            "  \"settings\": {",
+            "\t\"repeat\": \"${5|0,-1|}\",",
+            "\t\"unlock\": \"$6\",",
+            "\t\"vars\": \"\"",
+            "  },",
+            "  \"missions\": [",
+            "\t$0",
+            "  ]",
+            "}"
+        ],
+        "description": "The Structure of a DBC Mission File"
+    }
+}
